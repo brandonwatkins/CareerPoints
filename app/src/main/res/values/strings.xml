@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Career Points</string>
+    <string name="txtViewCurrentPoints">Career Points</string>
+    <string name="hintCurrentPoints">825</string>
+    <string name="txtViewDesiredPoints">Desired Career Points</string>
+    <string name="hintDesiredPoints">1000</string>
+    <string name="txtViewMinGames">Minimum Games</string>
+    <string name="txtViewMaxGames">Maximum Games</string>
+    <string name="btnCalculate">Calculate</string>
+    <string name="txtViewResults">Results</string>
+    <string name="txtViewGames">Games</string>
+    <string name="txtViewAVG">AVG</string>
+    <string name="hintMinGames">24</string>
+    <string name="hintMaxGames">36</string>
+    <string name="helpCurrentPoints">Players Overall Current Points</string>
+    <string name="helpDesiredPoints">Overall points player wants to score</string>
+    <string name="txtAppDescription">Calculate what a player needs to average.</string>
+    <string name="txtResultsDescription">Below are what the player needs to average in the amount of games you entered:</string>
+</resources>

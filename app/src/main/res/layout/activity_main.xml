@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ee6c4d"
+    tools:context="edu.mhu.cs.brandonwatkins.careerpoints.MainActivity">
+
+    <TextView
+        android:id="@+id/txtViewCurrentPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtViewCurrentPoints"
+        android:textAlignment="textStart"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="61dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="38dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/desiredPoints"
+        android:layout_width="289dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="6dp"
+        android:paddingLeft="5dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="@string/hintDesiredPoints"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewDesiredPoints" />
+
+    <EditText
+        android:id="@+id/currentPoints"
+        android:layout_width="289dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="@string/hintCurrentPoints"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewCurrentPoints" />
+
+    <TextView
+        android:id="@+id/txtViewDesiredPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtViewDesiredPoints"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginTop="7dp"
+        app:layout_constraintTop_toBottomOf="@+id/currentPoints"
+        android:layout_marginLeft="61dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="61dp" />
+
+    <TextView
+        android:id="@+id/txtViewMaxGames"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txtViewMaxGames"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/txtViewMinGames"
+        app:layout_constraintLeft_toLeftOf="@+id/maxGames"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/txtViewMinGames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/txtViewMinGames"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="39dp"
+        app:layout_constraintTop_toBottomOf="@+id/desiredPoints"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/maxGames"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="5dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="@string/hintMaxGames"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/minGames"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/minGames"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="6dp"
+        android:paddingLeft="5dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="@string/hintMinGames"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtViewMinGames" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="106dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/basketballhooplogo" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="0dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.15"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <TextView
+        android:id="@+id/txtAppDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/txtAppDescription"
+        android:textAlignment="center"
+        android:textColor="@color/dark_blue"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        style="@android:style/Widget.ImageButton"
+        android:layout_width="201dp"
+        android:layout_height="62dp"
+        android:background="@color/background_peach"
+        android:onClick="calculateBtn"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/calculatebtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="59dp"
+        app:layout_constraintTop_toBottomOf="@+id/minGames"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/dark_blue"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:srcCompat="@color/dark_blue"
+        android:layout_marginTop="17dp"
+        app:layout_constraintTop_toBottomOf="@+id/txtAppDescription" />
+
+</android.support.constraint.ConstraintLayout>
